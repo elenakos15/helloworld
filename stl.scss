@@ -1,0 +1,1288 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat','sans-serif';
+}
+
+.center {
+  padding-left:calc(50% - 600px) ;
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  height: 76px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo{
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+}
+
+.top{
+  height: 735px;
+  background-image: url(img/back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-catalog-background {
+  background-image: url(img/lu.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.top-cart-background {
+  background-image: url(img/karz.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px; 
+}
+
+.header__input {
+  width: 288px;
+  height: 41px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-left:32px;
+  padding-right:32px;
+}
+
+.header__input::placeholder {
+  color: #ffffff;
+}
+
+.hed-catalog {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: left;
+  color: #FFFFFF;
+  width: 270px;
+  height: 70px;
+  padding-top: 128px;
+  padding-bottom: 26px;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu__link {
+  color: #0075B2;
+  text-decoration: none; 
+  color: #faf6f6; 
+  font-size: 16px; 
+  line-height: 20px;
+}
+
+.menu-link:hover {
+  color: #0f0f0f; /* Цвет ссылки при наведении */ 
+  text-decoration: underline; /* Добавляем подчёркивание */
+}
+
+.hed {
+  font-family: Montserrat;
+  font-weight: 600; 
+  font-size:64px;
+  line-height: 70px;
+  color: #ffffff;
+  text-align: left;
+  padding-top: 64px;
+  padding-bottom: 16px;
+  width: 792px;
+}
+
+.top__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.top__txt {
+  padding-bottom: 16px;
+}
+
+.link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #ffffff;
+} 
+
+.new-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slink {
+  padding-top: 64px;
+  padding-bottom: 41px;
+  
+}
+
+.katalog {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width:419px;
+  height:40px;
+  top: 461px;
+  left: 901px;
+  gap: 10px;
+  opacity: 0px;
+}
+
+.pot {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #000;
+}
+
+.fp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:419px;
+  padding-top: 61px;
+  padding-bottom: 36px;
+}
+
+.treg-f {
+  display: flex;
+  outline: none;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 20px;
+  width: 182px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 16px;
+  background:white;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+
+  &:hover {
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+  }
+}
+
+.treg {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid rgb(196, 196, 196);
+  width: 182px;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 23px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  transition: 0.4s;
+  background-image: url(img/treg.svg);
+  background-repeat: no-repeat;
+  background-position: center right 22px;
+  font-family: inherit;
+  width: 227px;
+ 
+}
+
+.for {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 32px;
+}
+
+.for__item {
+  height: 415px;
+  grid-column: span 4;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+  color: #f4f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.for__item_big {
+  grid-column: span 6;
+}
+
+.for__item_1 {
+  background-image: url(img/fed1.jpg);
+}
+
+.for__item_2 {
+  background-image: url(img/fed2.jpg);
+}
+
+.for__item_3 {
+  background-image: url(img/fed3.jpg);
+}
+
+.for__item_4 {
+  background-image: url(img/fed4.jpg);
+}
+
+.for__item_5 {
+  background-image: url(img/fed5.jpg);
+} 
+
+.product__box {
+  margin-top: 64px;
+}
+
+.product {
+  width: 378px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__img {
+  width: 100%;
+}
+
+
+
+.product__name {
+  margin-top: 10px;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.product-content {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 56px;
+  flex-wrap: wrap;
+}
+
+.product__box-prace {
+  display: flex;
+  gap: 32px;
+}
+
+.heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 59px;
+  color: #000000;
+  text-align: left;
+  padding-bottom: 32px;
+   }
+   
+.product__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+  margin-bottom: 12px;
+}
+
+.product__price {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 29px;
+  text-align: left;
+  color:#131212;
+}
+.cale {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 29px;
+  text-align: left;
+  color: #a2a0a0;
+}
+
+.product__img {
+  padding-bottom: 16px
+}
+
+.katal {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600px ;
+  line-height: 59px;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 16px;
+  padding-top: 32px;
+}
+
+.fut {
+  display: flex;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #F7F6F6;
+  padding-top: 64px;
+  padding-bottom: 58px;
+}
+
+.foot-two {
+  display: flex;
+  justify-content: space-between;
+  gap: 129px;
+}
+
+.travel {
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.travel__name {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 32px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration-line: underline;
+  color: #888888;
+}
+
+.footer__box{
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  gap: 129px;
+}
+
+.footer-content{
+  margin-top: 32px;
+  display: flex;
+  row-gap: 56px;
+  flex-wrap: nowrap;
+  column-gap: 52px;
+}
+
+.prod {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product__had {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  width: 198px;
+  height: 44px;
+}
+
+.menu__big {
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  color:#131212;
+  padding-bottom: 12px;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu__lnk {
+
+  text-decoration: none; 
+  font-size: 14px; 
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888; 
+  font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.26px;
+text-align: left;
+
+}
+
+.sp {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888; 
+}
+
+.adv {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgb(99, 96, 96); 
+  padding-bottom: 16px;
+}
+
+.foot{
+  background-color: #F7F6F6;
+  border: 0px solid #eee;
+  padding-bottom: 58px;
+}
+
+.prod__box-price {
+  display: flex;
+  gap: 32px;
+  background-color: #888888;
+}
+
+.prod__zag {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+}
+
+.lin {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  font:inherit;
+  color: black; 
+  outline: none; 
+  border: 1px solid hsl(0, 4%,90%);
+  text-decoration: none;
+  border-radius: 20px;
+  border-color: #888888;
+  font-family: Montserrat;
+  width: 275px;
+  height: 41px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #888888;
+  padding-left: 25px;
+  box-sizing: border-box;
+  padding-right: 25px;
+}
+
+.pod {
+  display: inline-block;
+  outline: none;
+  border:1px solid white;
+  border-radius: 20px;
+  text-align: center;
+  width: 275px ;
+  height: 41px;
+  font-family: Montserrat;
+  font-size: 14px;
+  background: rgba(222, 215, 215, 0.4117647059);
+  margin-top: 12px; 
+}
+.cart__but {
+  padding-top: 50px;
+  margin: 64px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  text-align: center;
+  color: #000;
+  }
+  
+.top-cart-background {
+  background-image: url(img/karz.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.heading-cart {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: left;
+  margin-top: 127px;
+  color: #FFFFFF;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+}
+.cart__name-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+}
+.cart__item {
+  border-top: 0.5px solid #CACDD8;
+  padding-top: 25px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 786px;
+  height: 198px;
+}
+.cart__number {
+  width: 7px;
+  height: auto;
+}
+.cart__info {
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+}
+.cart__header__in::-moz-placeholder {
+  color: #ffffff;
+}
+.cart__header__in::placeholder {
+  color: #ffffff;
+}
+.cart__product__name {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Montserrat;
+  line-height: 29.26px;
+  text-align: left;
+  padding-bottom: 14px;
+  color: #000;
+}
+.cart__cena {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  width: 96px;
+  height: 20px;
+  color: #000;
+}
+.cart__img {
+  width: 173px;
+  height: 173px;
+}
+.cart__header__in {
+  width: 200px;
+  height: 37px;
+  border: 1px solid #0e0e0e;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  color: #0e0d0d;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  text-align: center;
+}
+.cart__but {
+  display: flex;
+  justify-content: flex-start;
+  gap: 7px;
+  width: 200px;
+  height: 37px;
+  padding-top: 50px;
+  margin-bottom: 64px;
+  color: #000;
+}
+.cart__header__z {
+  width: 290px;
+  height: 41px;
+  border-radius: 20px;
+  border: 1px solid #0e0e0e;
+  color: #000;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 18px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+}
+.cart__form {
+  border-radius: 20px;
+  background: #F7F6F6;
+  height: 556px;
+  grid-column: span 4;
+}
+.cart__content {
+  grid-column: span 8;
+}
+.cart__left {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.cart__link-box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cart__izbr {
+  width: 85px;
+  height: 29px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 29.4px;
+  text-align: center;
+  color: #000;
+}
+.cart__del {
+  width: 60px;
+  height: 29px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 29.4px;
+  text-align: center;
+  color: #000;
+}
+.cart__form-font {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.26px;
+  text-align: center;
+}
+.cart__head {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.51px;
+  text-align: left;
+  width: 729px;
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+.cart__travel__name {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #000;
+}
+.cart__one {
+  width: 71px;
+  height: 51px;
+  border-radius: 6px;
+}
+.cart__product__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  text-align: left;
+  width: 276px;
+  height: 50px;
+  color: #888;
+}
+.cart__form-tog {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.2 6px;
+  text-align: center;
+}
+.cart__oforml {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 42px;
+}
+.cart__form-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 64px;
+  gap: 44px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.zak {
+  font-family: Montserrat;
+  font-size: 24px;
+  padding-top: 42px;
+  padding-bottom: 35px;
+  font-weight: 700;
+  line-height: 29.26px;
+  text-align: center;
+}
+
+.cart__form-vvod {
+  font-family: inherit;
+  width: 100%;
+  height: 17px;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #CACDD8;
+  background: inherit;
+}
+.cart__form-vvod::-moz-placeholder {
+  color: #000;
+}
+.cart__form-vvod::placeholder {
+  color: #000;
+}
+.cart__form-vvod:focus {
+  outline: none;
+}
+
+filter-string__filter {
+  display: flex;
+  gap: 10px;
+  width: 419px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+ 
+    display: inline-block;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 227px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 16px;
+    background: white;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+}
+
+  .option{
+    display: flex;
+    gap: 10px; 
+    margin-top: 61px;
+}
+
+.filter-string .sort--but {
+  background-image: url(/img/Cursor.svg);
+  background-repeat: no-repeat;
+  background-position: 85%;
+  cursor: pointer;
+}
+.option__filtr{
+    box-sizing: border-box;
+    padding: 10px 40px 10px 15px; 
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    width: 182px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('img/select.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+    background-size: 12px;
+}
+.modal:target {
+    display: block;
+}
+.modal{
+       box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+       background: rgb(255, 255, 255);
+    z-index: 1;
+   }
+   input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    border: initial;
+   }
+   input[type="range" i] {
+  
+    cursor: default;
+    color: light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+
+.section {
+    display: block;
+    unicode-bidi: isolate;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.filter-string__filter {
+    display: flex;
+    gap: 10px;
+    width: 419px;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-string .sort--but {
+    background-image: url(/img/Cursor.svg);
+    background-repeat: no-repeat;
+    background-position: 85%;
+    cursor: pointer;
+}
+#myDialog {
+    width: 541.5px;
+    height: 548px;
+    padding: 40px 48px;
+    border: none;
+    top: 515px;
+    left: 38%;
+    right: 100px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-style-radio {
+  padding-left: 30px;
+}
+
+.check-box {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    padding-left: 20px;
+}
+.check-style-radio {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 60px;
+    position: absolute;
+    margin-left: -30px;
+}
+.check-box:checked + .check-style-radio::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    border: 1px solid #000000;
+    border-radius: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.srdos {
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+width: 136px;
+height: 20px;
+color: #050505;
+}
+
+.room {
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+width: 136px;
+height: 20px;
+color: #050505;
+}
+.sroki {
+  display: flex;
+  flex-direction: column;
+  gap:14px;
+  padding-bottom: 32px;
+  width: 102px;
+  height: 141px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  text-align: left;
+}
+
+.modal__content {
+  width:190.5px;
+  height:392px;
+
+}
+.modal__room {
+  display: flex;
+  flex-direction: column;
+  gap:14px;
+  padding-bottom: 32px;
+  width: 190px;
+  height: 392px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  text-align: left;
+  border-radius: 3px;
+}
+
+/* Поле формы фильтрации */
+.filtering-form__fieldset {
+  display: flex; /* Flex-контейнер */
+  flex-direction: column; /* Выравнивание дочерних элементов по колонке */
+  gap: 16px; /* Промежуток между элементами 16px */
+  padding: 0; /* Без внутренних отступов */
+  border: none; /* Без рамки */
+}
+
+/* Диапазон */
+.range {
+  display: flex; /* Flex-контейнер */
+  flex-direction: column; /* Выравнивание дочерних элементов по колонке */
+  gap: 14px; /* Промежуток между элементами 14px */
+}
+.range__input {
+  width: 190px; /* Ширина 190px */
+  height: 10px; /* Высота 10px */
+  overflow: hidden; /* Скрывает все, что выходит за пределы элемента */
+  outline: none; /* Без обводки */
+}
+
+.range__input,
+.range__input::-webkit-slider-runnable-track,
+.range__input::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Убирает стандартный стиль элементов */
+  background: none; /* Без фона */
+}
+
+.range__input::-webkit-slider-runnable-track {
+  width: 200px; /* Ширина 200px */
+  height: 1px; /* Высота 1px */
+  background: #000; /* Черный фон */
+}
+
+.range__input:nth-child(2)::-webkit-slider-runnable-track {
+  background: none; /* Без фона */
+}
+
+.range__input::-webkit-slider-thumb {
+  position: relative; /* Относительное позиционирование */
+  height: 8px; /* Высота 8px */
+  width: 8px; /* Ширина 8px */
+  margin-top: -4px; /* Отрицательный верхний отступ для выравнивания по центру */
+  background: #000; /* Черный фон */
+  border: 1px solid #000; /* Черная рамка толщиной 1px */
+  border-radius: 25px; /* Закругленные углы */
+  cursor: pointer; /* Курсор в виде указателя при наведении */
+  z-index: 1; /* Уровень наложения 1 */
+}
+
+.range__input::-webkit-slider-thumb:active {
+  cursor: grabbing; /* Курсор в виде руки, захватывающей элемент, при активном состоянии */
+}
+
+.range__input:nth-child(1)::-webkit-slider-thumb {
+  z-index: 2; /* Уровень наложения 2 */
+}
+
+.range__slider {
+  font-family: sans-serif; /* Шрифт sans-serif */
+  font-size: 14px; /* Размер шрифта 14px */
+  position: relative; /* Относительное позиционирование */
+  height: 20px; /* Высота 20px */
+  width: 210px; /* Ширина 210px */
+  display: inline-block; /* Встроенно-блочное отображение */
+  margin-top: -5px; /* Отрицательный верхний отступ */
+}
+
+.range__slider input {
+  position: absolute; /* Абсолютное позиционирование */
+}
+
+.range__label {
+  font-size: 14px; /* Размер шрифта 14px */
+}
+
+.colr {
+  width: 189px;
+height: 78px;
+}
+
+.part {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 65px;
+    width: 445.5px;
+ 
+}
+.prim {
+display: flex;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: center;
+width: 445.5px;
+height: 40px;
+justify-content: flex-end;
+align-items: stretch;
+margin-top: auto;
+}
+.cn{
+  border: none;
+  padding-bottom: 32px;
+}
+.modal__button {
+  width: 190px;
+height: 40px;
+border-radius: 20px;
+border: 1px solid black;
+color: #000;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: center;
+background-color: #FFFFFF;
+}
+.range {
+ appearance: none;
+ }
+
+.range::-webkit-slider-runnable-track{
+  height: 1px;
+  background: #000000;
+}
+.range::-webkit-slider-thumb{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #000000;
+  border-radius: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+}
+nput[type=range i] {
+  /*-webkit-appearance: auto; */
+  -moz-appearance: auto;
+  cursor: default;
+  color: light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+  padding: initial;
+  border: initial;
+  margin: 2px;
+}
+
+.chek-color {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+align-content: space-around;
+align-items: center;
+gap: 14px;
+}
+ /* Скрываем стандартные чекбоксы */
+ input[type="checkbox"] {
+  display: none;
+}
+/* Стили для кастомного чекбокса */
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  position: relative;
+}
+/* Цвета для чекбоксов */
+.one {
+  background-color: #FFFFFF; /* белый */
+  width: 15px;
+  height: 15px;
+ border: 1px solid #888888;
+
+}
+.two {
+background-color:#000000; /*черный  */
+width: 15px;
+height: 15px;
+}
+.three {
+background-color: #737373; /* серый */
+width: 15px;
+height: 15px;
+}
+.four {
+background-color: #FF0000; /* красный */
+width: 15px;
+height: 15px;
+}
+.five {
+background-color: #FF7A41; /*оранж */
+width: 15px;
+height: 15px;
+}
+.six {
+background-color: #F2CB01;/*желт */
+width: 15px;
+height: 15px;
+}
+.seven {
+background-color: #00BF2A;/*зелен */
+width: 15px;
+height: 15px;
+}
+.eight {
+background-color: #1CCC97;/*cсалат */
+width: 15px;
+height: 15px;  
+  }
+.nine {
+background-color: #009FE3;/*голубой */
+width: 15px;
+height: 15px;
+}
+.ten {
+background-color: #000AF8;/*синий */
+width: 15px;
+height: 15px;
+}
+.elev {
+background-color:#6710D6;/*фиол */
+width: 15px;
+height: 15px;
+}
+.twelw {
+background-color: #9D0DB5;/*сирен */
+width: 15px;
+height: 15px;
+}
+.thirteen {
+background-color: #D89AFF;/*свф */
+width: 15px;
+height: 15px;
+}
+.fourteen {
+background-color: #FF65A6;/*розовый */
+width: 15px;
+height: 15px;
+}
+/* Добавим галочку */
+.checkbox::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  
+  }
+  input[type="checkbox"]:checked+label:after {
+    content: '✔'; /* Знак галочки */
+    color: white;
+    text-align: center;
+    line-height: 20px; /* Центрируем вертикально */
+    }
+.room-but{
+  input[type="checkbox"] {
+    display: initial;
+  }
+}
+
+@import 'cart';
